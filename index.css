@@ -1,0 +1,140 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url('bg-intro-desktop.png');
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 65px 0px 300px 0px;
+}
+
+.header {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    color: #514949;
+}
+
+.grow {
+    margin: 70px 0px;
+    font-size: 15px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0px 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.buttons :nth-child(1) {
+    background: #e7332b;
+    color: white;
+    border: 1px solid #e7332b;
+}
+
+.buttons :nth-child(2) {
+    background: white;
+    color: #e7332b;
+    border: 1px solid #e7332b;
+}
+
+.buttons :nth-child(1):hover {
+    background: white;
+    color: #e7332b;
+    border: 1px solid #e7332b;
+    cursor: pointer;
+}
+
+.buttons :nth-child(2):hover {
+    background: #e7332b;
+    color: white;
+    border: 1px solid #e7332b;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+    width: 45%;
+    margin: 150px auto 50px auto;
+    color: #514949;
+}
+
+.zuri_programmes {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+.programme {
+    width: 31%;
+    margin: 2%;
+    padding: 50px 30px 80px 30px;
+    background: #fffafa;
+}
+
+.programme p  {
+    color: #514949;
+}
+
+.programme a {
+    color: #e7332b;
+    text-decoration: none;
+}
+
+.programme h4 {
+    width: 60%;
+    background: white;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 100px 20px;
+    align-items: flex-start;
+}
+
+.links, .contact, .socials {
+    margin-top: -25px;
+    color: #514949;
+}
+
+.contact p {
+    font-size: 14px;
+}
+
+.links h4 {
+    color: #514949;
+}
+
+.links a, .contact a {
+    display: block;
+    text-decoration: none;
+    color: #e7332b;
+    padding-bottom: 15px;
+}
+
+.socials a{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.socials i {
+    font-size: 20px;
+}
