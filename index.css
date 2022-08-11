@@ -1,6 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 main {
@@ -24,7 +26,6 @@ main {
 
 .buttons a {
     display: inline-block;
-    padding: 10px 30px;
     margin: 0px 15px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -32,12 +33,14 @@ main {
 }
 
 .buttons :nth-child(1) {
+    padding: 10px 30px;
     background: #e7332b;
     color: white;
     border: 1px solid #e7332b;
 }
 
 .buttons :nth-child(2) {
+    padding: 10px 30px;
     background: white;
     color: #e7332b;
     border: 1px solid #e7332b;
@@ -73,6 +76,7 @@ main {
 .zuri_programmes {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 section {
@@ -137,4 +141,84 @@ footer {
 
 .socials i {
     font-size: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons :nth-child(1) {
+        width: 200px;
+        padding: 10px;
+        margin: 15px auto;
+        font-size: 14px;
+    }
+    
+    .buttons :nth-child(2) {
+        width: 230px;
+        padding: 10px;
+        margin: 15px auto;
+        font-size: 14px;
+    }
+
+
+    .header {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+        margin: 50px 10px 30px 10px;
+    }
+
+    main {
+        padding: 65px 0px 70px 0px;
+    }
+
+    .center :nth-child(1){
+        font-size: 12px;
+    }
+
+    .zuri_programmes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .programme {
+        width: 100%;
+        padding: 40px;
+        margin: 10px 0px;
+        box-sizing: border-box;
+    }
+
+    .grow p, .programme p {
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links, .contact, .socials {
+        margin-top: 0px;
+    }
+
+    .links h4, .contact h4, .socials h4 {
+        font-size: 25px;
+    }
+
+    .contact, .links, .socials {
+        text-align: center;
+    }
+
+    .links h4, .contact h4 {
+        margin-bottom: -15px;
+    }
+
+    .socials h4 {
+        margin-bottom: 0px;
+    }
 }
