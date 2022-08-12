@@ -23,6 +23,10 @@ nav {
     align-items: center;
 }
 
+.two {
+  display: none;
+}
+
 .link {
     display: inline-block;
     margin: 0px 20px 0px 0px;
@@ -88,6 +92,10 @@ nav ul li a {
   
   .link:hover::after, .link:focus::after {
     width: 90%;
+  }
+
+  #forty {
+    font-size: 45px;
   }
 
   #lady {
@@ -329,6 +337,10 @@ nav ul li a {
   margin: auto;
 }
 
+#spanned {
+  font-weight: bold; font-size: 35px;
+}
+
 .faq {
   text-align: center;
   border-bottom: 1px solid lightslategray;
@@ -473,4 +485,266 @@ footer {
 
 .omoor {
   padding: 30px 0px;
+}
+
+.linked p {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .one {
+    display: none;
+  }
+
+  .two {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .two li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px;
+  }
+
+  #forty {
+    font-size: 25px;
+  }
+
+  .search {
+    padding: 0px 20px;
+  }
+
+  .search img {
+    bottom: -15px;
+    right: 50px;
+    width: 100px;
+  }
+
+  #lady {
+    width: 90%;
+    height: 450px;
+  }
+
+  #logos {
+    width: 150px;
+  }
+
+  #listimg {
+    width: 30px;
+    height: 30px;
+    border: 10px solid #e7332b;
+    border-radius: 30px;
+  }
+
+  #hire {
+    padding: 10px;
+    margin-left: -8px;
+    width: 90px;
+  }
+
+  .i4g {
+    flex-direction: column;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .zuri div {
+    width: 100%;
+  }
+
+  .zuri div :nth-child(2) {
+    font-size: 25px;
+  }
+
+  .zuri img {
+    display: none;
+  }
+
+  .divs, .div, .dived, .di, .zuri, #ehe, footer {
+    flex-direction: column;
+  }
+
+  .divs div, .div div, .dived div {
+    padding: 15px 25px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .divs h1, .div h1, .dived h1 {
+    font-size: 45px;
+  }
+
+  .divs h2, .div h2, .dived h2 {
+    font-size: 25px;
+  }
+
+  .enroll {
+    width: 100%;
+  }
+
+  .img :nth-child(1) {
+    visibility: hidden;
+  }
+
+  .img :nth-child(2) {
+    height: 90px;
+  }
+
+  section {
+    padding: 20px 0px;
+  }
+
+  .secthird {
+    padding: 30px 10px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .pink img {
+    width: 100px;
+  }
+
+  .secsecond {
+    padding: 10px 25px;
+  }
+  
+  .secsecond :nth-child(1) {
+    height: 80px;
+  }
+  .secsecond :nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  .cursor {
+    display: grid;
+    grid-template-areas: 
+      'a b'
+      'c d'    
+    ;
+    gap: 15px;
+  }
+
+  .cursor :nth-child(1) {
+    grid-area: a;
+  }
+
+  .cursor :nth-child(2) {
+    grid-area: b;
+  }
+
+  .cursor :nth-child(3) {
+    grid-area: c;
+  }
+
+  .cursor :nth-child(4) {
+    grid-area: d;
+  }
+
+  #all {
+    padding: 5px 10px;
+    border-radius: 40px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .di div {
+    background: white;
+    padding: 15px 25px;
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  .di {
+    padding: 10px;
+  }
+
+  .di img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .noun {
+    width: 30%;
+  }
+  
+  .nouns {
+    width: 50%;
+  }
+
+  #spanned {
+    font-size: 22px;
+  }
+
+  .faq div {
+    width: 90%;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+
+  .faq div p {
+    font-size: 17px;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin: 40px 0px;
+  }
+
+  .dividend img {
+    width: 40px;
+  }
+  
+  .section {
+    margin: 20px 15px;
+  }
+
+  .final {
+    width: 80%;
+  }
+
+  .final h1 {
+    font-size: 25px;
+  }
+
+  .pose p {
+    display: none;
+  }
+
+  .socials {
+    width: 100%;
+    margin: 20px 0px;    
+  }
+
+  .socials a {
+    transform: translateX(100%);
+  }
+
+  .omoor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .omoor :nth-child(1) {
+    order: 2;
+    margin-top: 30px;
+  }
+  
+  .omoor :nth-child(2) {
+    order: 1;
+    margin-top: -20px;
+  }
+
+  .linked p {
+    display: block;
+    padding: 25px 0px;
+    border-top: 1px solid lightgrey;
+    text-align: center;
+  }
+  
 }
