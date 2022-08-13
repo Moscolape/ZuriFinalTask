@@ -180,8 +180,9 @@ section img {
 
 .skills p, .work p {
     padding: 15px 20px;
-    box-shadow: 1px 1px 5px 1px lightgray;
+    box-shadow: 0px 0px 20px lightgray;
     transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 .skills p:hover, .work p:hover {
@@ -274,4 +275,186 @@ footer {
 
 .pose img {
     transform: translateX(150px);
+}
+
+.two {
+    display: none;
+}
+
+#vote {
+    font-size: 35px;
+}
+
+#another {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .one {
+        display: none;
+    }
+    
+    .two {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 10px 0px 10px 20px;
+    }
+
+    main {
+        margin: 80px 0px;
+    }
+
+    .vet {
+        width: 85%;
+    }
+
+    .vet img {
+        right: 10px;
+        top: 80px;
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    .buttons :nth-child(1) {
+        padding: 8px 20px;
+        margin: 0px 10px;
+    }
+    
+    .buttons :nth-child(2) {
+        padding: 8px 20px;
+        margin: 0px 10px;
+    }
+
+    #img {
+        width: 90%;
+        height: 70%;
+    }
+    
+    #again {
+        display: none;
+    }
+
+    #first {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    #lasted {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #second {
+        width: 100%;
+    }
+
+    #collection img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .third {
+        padding: 30px 20px;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-areas: 
+          'a b'
+          'c d'    
+        ;
+        gap: 15px;
+        text-align: center;
+      }
+    
+      .skills :nth-child(1) {
+        grid-area: a;
+      }
+    
+      .skills :nth-child(2) {
+        grid-area: b;
+      }
+    
+      .skills :nth-child(3) {
+        grid-area: c;
+      }
+    
+      .skills :nth-child(4) {
+        grid-area: d;
+      }
+
+      .work {
+        display: grid;
+        grid-template-areas: 
+          'a b'
+          'c d'    
+          'e f'    
+        ;
+        gap: 15px;
+        text-align: center;
+      }
+    
+      .work :nth-child(1) {
+        grid-area: a;
+      }
+    
+      .work :nth-child(2) {
+        grid-area: b;
+      }
+    
+      .work :nth-child(3) {
+        grid-area: c;
+      }
+    
+      .work :nth-child(4) {
+        grid-area: d;
+      }
+
+      .work :nth-child(5) {
+        grid-area: e;
+      }
+    
+      .work :nth-child(6) {
+        grid-area: f;
+      }
+
+      .divs, footer {
+        flex-direction: column;
+      }
+
+      #sect, .divs div {
+        padding: 20px;
+      }
+
+      .divs div {
+        width: 82%;
+      }
+
+      .pose img {
+        transform: translateX(60%);
+    }
+    
+
+      .pose p {
+        display: none;
+      }
+
+      #another {
+        display: block;
+        padding: 15px 0px;
+        border-top: 1px solid white;
+        text-align: center;
+      }
+
+      .socials {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .linked p {
+        text-align: center;
+      }
 }
